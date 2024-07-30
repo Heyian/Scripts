@@ -1,0 +1,6 @@
+[Unit]
+Description=Export size of folders to the Prometheus Node Exporter
+
+[Service]
+Type=simple
+ExecStart=/bin/sh -c '/home/{profile}/scripts/node_exporter_directory_size.sh /home/{profile} /var/log /var/lib/node_exporter /tmp /etc /var/lib /run/user/1000 | sponge /var/lib/node_exporter/textfile_collector/directory_size.prom'

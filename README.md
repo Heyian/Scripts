@@ -33,3 +33,8 @@ This script runs before any of my backups to make sure of:
     2. No other docker container is running
     3. Zellij sessions are closed
     4. SSHFS is unmounted
+
+- node_exporter_directory_size.sh
+
+This script is used in conjunction with `directory-size-exclusion.txt` and launch with the systemd service `node_exporter_directory_size.service`
+This script will write the sizes of specific folders called after the command (see `node_exporter_directory_size.service` for example) to a prometheus textfile collector.
