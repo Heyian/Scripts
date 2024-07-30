@@ -42,3 +42,7 @@ This script will write the sizes of specific folders called after the command (s
 - test_apps_after_update.sh
 
 I run Hyprland on Arch, so yeah, things break more often than I'd like. This script runs automatically after a reboot and tests a bunch of apps to see if anything important broke
+
+- QTowerBak.sh
+This script is used in conjunction with `QTowerBak-exclusions.txt`
+This script runs every day and creates a backup of my home folder and the list of apps I currently use. It keeps a backup for the last 7 days.

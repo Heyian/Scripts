@@ -1,0 +1,19 @@
+#Trash
+/home/{profile}/.local/share/Trash/**
+
+#Useless to backup this in Home
+/home/{profile}/.local/share/Steam/**
+/home/{profile}/.local/share/JetBrains/**
+/home/{profile}/.cache
+/home/{profile}/.thunderbird/**
+/home/{profile}/WallpaperEngine/**
+/home/{profile}/.waypaper_engine/**
+
+#ISO
+/home/{profile}/ISO/**
+
+#Containers
+/home/{profile}/.var/app/com.usebottles.bottles/**
+
+#SSHFS
+/home/{profile}/sshfs/**
